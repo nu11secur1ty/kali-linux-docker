@@ -31,3 +31,24 @@ nu11secur1ty:~ # docker pull kalilinux/kali-linux-docker
 nu11secur1ty:~ # docker run -t -i kalilinux/kali-linux-docker /bin/bash
 root@7e2a35940eff:/# apt-get update && apt-get install metasploit-framework
 ```
+# Building Your Own Kali Linux Docker Image
+
+If you want to build your own Kali images rather than use our pre-made ones, we’ve made it easy with the following script hosted on Kali Linux Docker on Github. These images are best built on a Linux system or any other OS that can debootstrap.
+
+
+```bash
+#!/bin/bash
+# Install dependencies (debootstrap)
+sudo apt-get install debootstrap
+# Fetch the latest Kali debootstrap script from git
+curl "https://gitlab.com/kalilinux/packages/debootstrap.git;a=blob_plain;f=scripts/kali;hb=HEAD" > kali-debootstrap &&\
+sudo debootstrap kali ./kali-root http://http.kali.org/kali ./kali-debootstrap &&\
+# Import the Kali image into Docker
+sudo tar -C kali-root -c . | sudo docker import - kalilinux/kali &&\
+sudo rm -rf ./kali-root &&\
+# Test the Kali Docker Image
+docker run -t -i kalilinux/kali cat /etc/debian_version &&\
+echo "Build OK" || echo "Build failed!"
+```
+
+# Have fun with your Kali Docker images! :)
