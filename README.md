@@ -57,5 +57,6 @@ sudo rm -rf ./kali-root &&\
 docker run -t -i kalilinux/kali cat /etc/debian_version &&\
 echo "Build OK" || echo "Build failed!"
 ```
+![](https://github.com/nu11secur1ty/kali-linux-docker/blob/master/screenshot_Metasploit/Screenshot%20from%202019-07-24%2020-19-24.png)
 
 # Have fun with your Kali Docker images! :)
