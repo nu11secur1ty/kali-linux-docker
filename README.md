@@ -27,8 +27,7 @@ Tue May 21 13:59:06 EDT 2019
 
 Obviously, to get this running, you need to install Docker. For Docker on OSX you can use brew, while for most other distributions, you can install it using your local package manager. Once installed and set up, it’s just a matter of pulling our image from the Docker repository:
 
-- Example fot running the docker and Metasploit
-
+- Example of running the docker and Metasploit
 ```bash
 nu11secur1ty:~ # docker pull kalilinux/kali-linux-docker
 nu11secur1ty:~ # docker run -t -i kalilinux/kali-linux-docker /bin/bash
