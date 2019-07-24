@@ -34,6 +34,7 @@ nu11secur1ty:~ # docker pull kalilinux/kali-linux-docker
 nu11secur1ty:~ # docker run -t -i kalilinux/kali-linux-docker /bin/bash
 root@7e2a35940eff:/# apt-get update && apt-get install metasploit-framework
 root@7e2a35940eff:/# service postgresql start
+root@7e2a35940eff:/# ss -ant
 root@7e2a35940eff:/# msfdb init
 root@7e2a35940eff:/# msfconsole
 ```
