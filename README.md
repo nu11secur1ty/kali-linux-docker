@@ -29,8 +29,8 @@ Obviously, to get this running, you need to install Docker. For Docker on OSX yo
 
 - Example of running the docker and Metasploit
 ```bash
-nu11secur1ty:~ # docker pull kalilinux/kali-linux-docker
-nu11secur1ty:~ # docker run -t -i kalilinux/kali-linux-docker /bin/bash
+nu11secur1ty:~ # docker pull nu11secur1ty/kali-linux-docker
+nu11secur1ty:~ # docker run -t -i nu11secur1ty/kali-linux-docker /bin/bash
 root@7e2a35940eff:/# apt-get update && apt-get install metasploit-framework
 root@7e2a35940eff:/# service postgresql start
 root@7e2a35940eff:/# ss -ant
