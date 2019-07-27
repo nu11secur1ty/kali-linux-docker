@@ -29,14 +29,17 @@ RUN set -x \
     && apt-get -yqq dist-upgrade \
     && apt-get clean
 CMD ["bash"]
+
 # sqliv
-    apt-get -yqq install git \
-    git clone https://github.com/nu11secur1ty/sqliv2.git \
-    pip install --upgrade pip \
-    pip2 install --upgrade pip \
-    pip install google \
-    pip install bs4 \
-    pip2 install nyawc \
-    pip2 install termcolor \
-    pip2 install tabulate \
-    pip2 install terminaltables 
+RUN apt-get -yqq update 
+    && apt-get -yqq install git
+    
+RUN git clone https://github.com/nu11secur1ty/sqliv2.git 
+RUN pip install --upgrade pip 
+RUN pip2 install --upgrade pip 
+RUN pip install google 
+RUN pip install bs4 
+RUN pip2 install nyawc 
+RUN pip2 install termcolor 
+RUN pip2 install tabulate 
+RUN pip2 install terminaltables 
