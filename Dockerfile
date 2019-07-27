@@ -28,6 +28,6 @@ RUN set -x \
     && apt-get -yqq update \
     && apt-get -yqq dist-upgrade \
     && apt-get -yqq install git \
-    && git clone https://github.com/nu11secur1ty/sqliv2.git
+    && git clone https://github.com/nu11secur1ty/sqliv2.git \
     && apt-get clean
 CMD ["bash"]
