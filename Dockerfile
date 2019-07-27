@@ -31,7 +31,7 @@ RUN set -x \
 CMD ["bash"]
 
 # sqliv
-RUN apt-get -yqq update 
+RUN apt-get -yqq update \
     && apt-get -yqq install git
     
 RUN git clone https://github.com/nu11secur1ty/sqliv2.git 
