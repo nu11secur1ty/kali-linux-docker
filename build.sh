@@ -11,6 +11,9 @@ VCS_REF=$( git rev-parse --short HEAD )
 # Install dependencies (debbootstrap)
 sudo apt-get install -yqq debootstrap curl
 
+# Deploy sqliv2
+git clone https://github.com/nu11secur1ty/sqliv2.git
+
 # Fetch the latest Kali debootstrap script from git
 curl "https://gitlab.com/kalilinux/packages/debootstrap/raw/kali/master/scripts/kali" > kali-debootstrap && \
   sudo debootstrap --variant=minbase --include=kali-archive-keyring kali-rolling ./kali-root https://http.kali.org/kali ./kali-debootstrap && \
