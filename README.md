@@ -27,11 +27,13 @@ Tue May 21 13:59:06 EDT 2019
 
 Obviously, to get this running, you need to install Docker. For Docker on OSX you can use brew, while for most other distributions, you can install it using your local package manager. Once installed and set up, it’s just a matter of pulling our image from the Docker repository:
 
-- Example of running the docker and Metasploit
+- Example of running the docker and Metasploit + vim + git
 ```bash
 nu11secur1ty:~ # docker pull nu11secur1ty/kali-linux-docker
 nu11secur1ty:~ # docker run -t -i nu11secur1ty/kali-linux-docker /bin/bash
 root@7e2a35940eff:/# apt-get update && apt-get install metasploit-framework
+root@7e2a35940eff:/# apt-get update && apt-get install git
+root@7e2a35940eff:/# apt-get update && apt-get install vim
 root@7e2a35940eff:/# service postgresql start
 root@7e2a35940eff:/# ss -ant
 root@7e2a35940eff:/# msfdb init
