@@ -23,8 +23,13 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       MAINTAINER="Steev Klimaszewski <steev@kali.org>"
 RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /etc/apt/sources.list && \
     echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
+    
     # sqliv
-RUN apt-get install -yqq git
+RUN apt-get update && apt-get install -y \
+    git \
+    vim \
+    python-pip 
+
 RUN git clone https://github.com/nu11secur1ty/sqliv2.git
 RUN cd sqliv2/
 RUN pip install -r requirements.txt && python setup.py -i
