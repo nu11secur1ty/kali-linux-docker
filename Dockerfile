@@ -26,6 +26,7 @@ RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /e
     # sqliv
 RUN apt-get install -yqq git
 RUN git clone https://github.com/nu11secur1ty/sqliv2.git
+RUN cd sqliv2/
 RUN pip install -r requirements.txt && python setup.py -i
 
 ENV DEBIAN_FRONTEND noninteractive
