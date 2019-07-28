@@ -25,14 +25,17 @@ RUN echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" > /e
     echo "deb-src http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
     
     # sqliv
-RUN apt-get update && apt-get install -y \
-    git \
-    vim \
-    python-pip 
+RUN set -x \
+    && apt-get -yqq update \
+    && apt-get -yqq dist-upgrade \
+    && apt-get -yqq install git \
+    && apt-get -yaq install vim \
+    && apt-get clean
+CMD ["bash"]
 
-RUN git clone https://github.com/nu11secur1ty/sqliv2.git
-RUN cd sqliv2
-RUN pip install -r requirements.txt && python setup.py -i
+#RUN git clone https://github.com/nu11secur1ty/sqliv2.git
+#RUN cd sqliv2
+#RUN pip install -r requirements.txt && python setup.py -i
 
 ENV DEBIAN_FRONTEND noninteractive
 RUN set -x \
