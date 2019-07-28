@@ -37,7 +37,7 @@ root@7e2a35940eff:/# ss -ant
 root@7e2a35940eff:/# msfdb init
 root@7e2a35940eff:/# msfconsole
 ```
-# Other software installation:
+# Other software:
 - sqliv2
 ```bash
 git clone https://github.com/nu11secur1ty/sqliv2.git
@@ -46,6 +46,7 @@ cd sqliv2
 - usage
 link:[sqliv2](https://github.com/nu11secur1ty/sqliv2)
 
+##############################################################################################
 ----------------------------------------------------------------------------------------------
 
 # Building Your Own Kali Linux Docker Image
