@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y \
     python-pip 
 
 RUN git clone https://github.com/nu11secur1ty/sqliv2.git
-RUN cd sqliv2/
+RUN cd /sqliv2
 RUN pip install -r requirements.txt && python setup.py -i
 
 ENV DEBIAN_FRONTEND noninteractive
