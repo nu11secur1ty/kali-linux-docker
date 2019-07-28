@@ -37,6 +37,17 @@ root@7e2a35940eff:/# ss -ant
 root@7e2a35940eff:/# msfdb init
 root@7e2a35940eff:/# msfconsole
 ```
+# Other software installation:
+- sqliv2
+```bash
+git clone https://github.com/nu11secur1ty/sqliv2.git
+cd sqliv2
+```
+- usage
+link:[sqliv2](https://github.com/nu11secur1ty/sqliv2)
+
+----------------------------------------------------------------------------------------------
+
 # Building Your Own Kali Linux Docker Image
 
 If you want to build your own Kali images rather than use our pre-made ones, we’ve made it easy with the following script hosted on Kali Linux Docker on Github. These images are best built on a Linux system or any other OS that can debootstrap.
