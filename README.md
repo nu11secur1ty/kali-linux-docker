@@ -41,6 +41,7 @@ root@7e2a35940eff:/# msfconsole
 ```
 # Other software:
 - sqliv2
+
 ```bash
 git clone https://github.com/nu11secur1ty/sqliv2.git
 cd sqliv2
@@ -48,7 +49,10 @@ cd sqliv2
 . usage
 link:[sqliv2](https://github.com/nu11secur1ty/sqliv2)
 
+-----------------------------------------------------------------------------------------------
+
 - nu11secur1ty pack
+
 . Get:
 ```bash
 git clone https://github.com/nu11secur1ty/nu11secur1ty.git
