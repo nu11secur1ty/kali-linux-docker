@@ -57,7 +57,7 @@ link:[sqliv2](https://github.com/nu11secur1ty/sqliv2)
 ```bash
 git clone https://github.com/nu11secur1ty/nu11secur1ty.git
 ```
-linh:[nu11secur1ty](https://github.com/nu11secur1ty/nu11secur1ty)
+link:[nu11secur1ty](https://github.com/nu11secur1ty/nu11secur1ty)
 
 
 
