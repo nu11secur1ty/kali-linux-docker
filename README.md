@@ -84,7 +84,8 @@ echo "Build OK" || echo "Build failed!"
 ```
 ![](https://github.com/nu11secur1ty/kali-linux-docker/blob/master/screenshot_Metasploit/Screenshot%20from%202019-07-24%2020-19-24.png)
 
-***OTHER SOFT DOCUMENTATION INSTALLATION AND REMOVING IMAGES***
+
+***OTHER SOFTWARE DOCUMENTATION, INSTALLATION AND REMOVING A DOCKER IMAGES***
 -------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------------
