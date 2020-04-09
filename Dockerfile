@@ -29,5 +29,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN set -x \
     && apt -yqq update \
     && apt -yqq dist-upgrade \
+    && apt -yqq autoremove \
     && apt clean
 CMD ["bash"]
