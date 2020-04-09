@@ -128,7 +128,7 @@ There are also other examples of a `grunt` command container similar to `drush` 
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-The [webapp](webapp) folder on the host will be mounted into the container's apache root
+The webapp folder on the host will be mounted into the container's apache root
 
 # Contributing
 
