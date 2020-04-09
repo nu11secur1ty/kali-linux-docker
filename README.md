@@ -31,9 +31,11 @@ Obviously, to get this running, you need to install Docker. For Docker on OSX yo
 ```bash
 nu11secur1ty:~ # docker pull nu11secur1ty/kali-linux-docker
 nu11secur1ty:~ # docker run -t -i nu11secur1ty/kali-linux-docker /bin/bash
-root@7e2a35940eff:/# apt-get update && apt-get install metasploit-framework
-root@7e2a35940eff:/# apt-get update && apt-get install git
-root@7e2a35940eff:/# apt-get update && apt-get install vim
+root@7e2a35940eff:/# apt update
+root@7e2a35940eff:/# apt dist-update
+root@7e2a35940eff:/# apt update && apt install metasploit-framework
+root@7e2a35940eff:/# apt update && apt install git
+root@7e2a35940eff:/# apt update && apt install vim
 root@7e2a35940eff:/# service postgresql start
 root@7e2a35940eff:/# ss -ant
 root@7e2a35940eff:/# msfdb init
