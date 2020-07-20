@@ -310,4 +310,4 @@ This guide covers some of the common commands used to remove images, containers,
 ![](https://github.com/nu11secur1ty/opensuse-apache-docker/blob/master/Screenshot%20from%202018-05-12%2020-32-12.png)
 
 # Good luck to everyone! ;)
-# Have fun with your Kali Docker images! :)
+# Have fun with your Kali Docker image! :)
